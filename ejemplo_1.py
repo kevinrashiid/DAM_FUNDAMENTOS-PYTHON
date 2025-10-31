@@ -1,4 +1,7 @@
 #print('Hola Martin')
+from ftplib import print_line
+
+from PIL.TiffImagePlugin import IFDRational
 
 a = 0 # Numero entero
 b = 0.0 # Numero decimal (Real o float)
@@ -117,4 +120,70 @@ print(pos)'''
 
 palabra = 'manzana'
 print(palabra.find('na'))
+
+data='sdefdef123@hotmail.com san Jan 5 09:14:16 2008'
+arroba=data.find('@')
+print(arroba) ##posicion de @
+
+esposs=data.find(' ',arroba)
+print(esposs)## posicion del espacio y del @
+print('############################################')
+
+Letram=data.find(("sa"))
+dominio=data[arroba+1:Letram-1] ##nos quedamos con desde arroba(@) hasta
+print(dominio)
+print('############################################')
+
+
+a=5
+b=2
+
+if a==b: ##si son iguales
+    print('iguales') ##esto
+else: ##si no esto
+    print('disintas')
+print('print fuera del if')
+print('############################################')
+
+if a>b:#si a mayor que b
+    print('a mayor que b')
+elif a<b:#si a menor que b
+    print('b mayor que a')
+else: #si son iguales lo demas si son iguales
+    print('!!')
+print('############################################')
+
+## TODO CASTEOS(CONVERSIONES)
+num=int(input('INTRODUCE UN NUMERO MENOR QUE 5: '))
+if num < 5:
+    print('es menor que 5')
+else:
+    print('es mayor que 5')
+
+#TODO //////////////// FIBONACCI/////////////////////////
+a,b=0,2 ##a=0 y b=2
+while a<1000:
+    print(a)
+    a,b=b,a+b
+print('############################################')
+
+listaDeColores=['rojo','verde','azul']
+
+for color in listaDeColores: ##TODO recoremos array
+    print(color) ##uno debajo de otro
+print('############################################')
+
+for i in range(10): ##todo imprimiendo del 0 al 10
+    print(i)
+print('############################################')
+for i in range(5,10,2): ##i+=2 ir del 5 al 10 de dos en dos
+    print(i)
+
+##TODO CODIGO QUE NUNCA DEBEMOS HACER
+
+
+
+
+
+
 
