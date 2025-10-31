@@ -45,3 +45,5 @@ print("prueba "+s)
 
 if fruta== "manzana":
     print("son iguales")
+
+
