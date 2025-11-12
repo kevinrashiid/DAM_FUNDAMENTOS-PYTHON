@@ -11,10 +11,7 @@ medio=(num1+num2+num3)-(mayor+menor)
 print(menor)
 print(medio)
 print(mayor)'''
-from statistics import median
-from tokenize import String
 
-from ejercicio import contador
 
 #3.-Escribir un programa en python que nos pida las notas de los dos trimestres
 # y nos muestre la media aritmética resultante
@@ -66,10 +63,10 @@ else:
 #la palabra FIN (con mayúsculas). En ese caso terminamos y mostramos por pantalla el
 #numero de entradas válidas que hemos hecho (sin contar esta última que sólo sirve para
 #finalizar el programa)
-bandera=False
+'''bandera=False
 contador=0
 while(bandera==False):
-    salida=String(input("Escribe algo, FIN para salir:"))
+    salida=(input("Escribe algo, FIN para salir:"))
     if salida == "FIN":
         bandera=True
         print("SALIMOS")
@@ -79,4 +76,56 @@ while(bandera==False):
         #SIN ACABAR
 if(bandera==True):
     print("SALISTE")
-    print(contador)
+    print("Haz introducido ",contador," entradas antes de salir")'''
+
+#7. Escribir un programa en python que pida un número por teclado y nos imprima la tabla
+#de multiplicar de dicho número del 1 al 10. Por ejemplo, si introducimos el 74 el
+#resultado será algo así:
+#74 x 1 = 74
+#74 x 2 = 148
+#…
+#74 x 10 = 740
+'''numero=int(input("dime un numero "))
+print("TABLA DE MULTIPLICAR DEL ",numero)
+for i in range(1,11):
+    resultado=numero*i
+    print(numero," x ", i, " = ", resultado)'''
+
+#8. Escribir un programa en python que pida una contraseña por teclado (dos veces) y si no
+#coinciden nos las vuelva a pedir hasta que lo hagan
+'''contra=input("CONTRASEÑA: ")
+repetirContra=input("VUELVE A INSTRODUCIR LA CONTRASEÑA: ")
+while(contra!=repetirContra):
+    print("La contraseña no coinciden vuelve a introducirla")
+    contra = input("CONTRASEÑA: ")
+    repetirContra = input("VUELVE A INSTRODUCIR LA CONTRASEÑA: ")
+if(contra==repetirContra):
+    print("LAS CONTRASEÑAS SON IGUALES ADELANTE ")'''
+
+#9. Escribir un programa en python que nos pida nuestro nombre y apellidos (dos peticiones
+#hechas en ese orden) y nos lo escriba formateado de la siguiente forma:
+#Morales Vázquez, José María
+'''nombre=input("NOMBRE? ")
+apellido=input("APELLIDO? ")
+print(apellido,", ",nombre)'''
+
+#10. Escribir un programa en python que nos pida elegir entre cuatro destinos turísticos
+#(Francia, Italia, Chile o Japón) y dependiendo de nuestra respuesta nos diga cual es la
+#capital de nuestro destino (París, Roma, Santiago de Chile o Tokio)
+'''pais=input("ELIGE UN DESTINO FRANCIA ITALIA CHILE JAPON-> ")
+paisMinusculas=pais.lower()
+if paisMinusculas== "francia" :
+    print("Haz elegido Francia con capital Paris")
+elif paisMinusculas=="italia":
+    print("Haz elegido Italia con capital Roma")
+elif paisMinusculas=="chile":
+    print("Haz elegido Chile con capital Santiago de chile")
+elif paisMinusculas=="japon":
+    print("Haz elegido Japon con capital Tokio")
+else:
+    print("destino no disponible")'''
+
+
+
+
+
