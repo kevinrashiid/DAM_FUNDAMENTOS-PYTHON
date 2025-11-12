@@ -1,7 +1,6 @@
 ''' TODO --- EJERCICIOS PARA EL EXAMEN'''
 import random
 from email.contentmanager import raw_data_manager
-from idlelib.macosx import addOpenEventSupport
 from typing import final
 
 from unicodedata import numeric
