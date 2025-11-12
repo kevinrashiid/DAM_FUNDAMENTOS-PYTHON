@@ -12,7 +12,7 @@ Al final, mostrar los 6 números ordenados de menor a mayor
 Ejemplo de salida:'''
 import random
 
-#TODO EJERCICIO 1 LOTERIA PRIMITIVA
+#TODO EJERCICIO 1 LOTERÍA PRIMITIVA
 '''
 import random
 listaNumeros=[]
