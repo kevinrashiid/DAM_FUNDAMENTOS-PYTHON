@@ -1,3 +1,4 @@
+import random
 
 
 '''Ejercicio 2: Primitiva sin Números Repetidos
@@ -10,9 +11,8 @@ Si el número ya existe, generar otro hasta conseguir uno nuevo
 Al final, mostrar los 6 números ordenados de menor a mayor
 
 Ejemplo de salida:'''
-import random
 
-#TODO EJERCICIO 1 LOTERÍA PRIMITIVA
+# EJERCICIO 1 LOTERÍA PRIMITIVA
 '''
 import random
 listaNumeros=[]
