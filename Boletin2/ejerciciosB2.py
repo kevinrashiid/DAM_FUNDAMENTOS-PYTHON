@@ -72,6 +72,11 @@ while(bandera==False):
     salida=String(input("Escribe algo, FIN para salir:"))
     if salida == "FIN":
         bandera=True
+        print("SALIMOS")
     else:
+        print("no SALIMOS")
         contador=contador+1
         #SIN ACABAR
+if(bandera==True):
+    print("SALISTE")
+    print(contador)
