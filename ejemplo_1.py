@@ -1,7 +1,5 @@
 #print('Hola Martin')
-from ftplib import print_line
 
-from PIL.TiffImagePlugin import IFDRational
 
 a = 0 # Numero entero
 b = 0.0 # Numero decimal (Real o float)
