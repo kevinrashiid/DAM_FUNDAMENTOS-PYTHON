@@ -12,6 +12,9 @@ print(menor)
 print(medio)
 print(mayor)'''
 from statistics import median
+from tokenize import String
+
+from ejercicio import contador
 
 #3.-Escribir un programa en python que nos pida las notas de los dos trimestres
 # y nos muestre la media aritmética resultante
@@ -59,9 +62,16 @@ else:
     medianNotas=notaTrabajos+notaEjercicios+notaExamen
     print("La media de las notas ",medianNotas)'''
 
-'''6. Escribir un programa en python que pida una entrada por teclado hasta que escribamos
-la palabra FIN (con mayúsculas). En ese caso terminamos y mostramos por pantalla el
-numero de entradas válidas que hemos hecho (sin contar esta última que sólo sirve para
-finalizar el programa)'''
-
-
+#6. Escribir un programa en python que pida una entrada por teclado hasta que escribamos
+#la palabra FIN (con mayúsculas). En ese caso terminamos y mostramos por pantalla el
+#numero de entradas válidas que hemos hecho (sin contar esta última que sólo sirve para
+#finalizar el programa)
+bandera=False
+contador=0
+while(bandera==False):
+    salida=String(input("Escribe algo, FIN para salir:"))
+    if salida == "FIN":
+        bandera=True
+    else:
+        contador=contador+1
+        #SIN ACABAR
