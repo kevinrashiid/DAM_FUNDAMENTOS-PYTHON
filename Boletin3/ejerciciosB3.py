@@ -1,5 +1,7 @@
+import random
 from ctypes import pythonapi
 from gettext import textdomain
+from html.parser import interesting_normal
 from queue import PriorityQueue
 
 #4. Escribir un programa que pida al usuario una cadena de texto y la escriba con el
@@ -12,8 +14,8 @@ from queue import PriorityQueue
 #e -> 3
 #i -> 1
 #o -> 0
-
-'''texto=input("INTRODUCE TEXTO-> ")
+'''
+texto=input("INTRODUCE TEXTO-> ")
 minusculas=texto.lower()
 for i in minusculas:
     if i == 'a' :
@@ -34,7 +36,7 @@ print(minusculas)'''
 #Si contiene la palabra "python" (sin importar mayúsculas).
 #El texto sin espacios al principio ni al final.
 #El texto con las vocales reemplazadas por números (a→4, e→3, i→1, o→0)
-texto=input("INTRODUCIR TEXTO")
+'''texto=input("INTRODUCIR TEXTO")
 texto2=texto
 numCaracteres= len(texto)
 print("el texto tiene ",numCaracteres," caracteres")
@@ -56,7 +58,7 @@ print("mayusculas ",texto.upper())
 sinEspacios=texto.strip()
 print("sin Espacios ",sinEspacios)
 
-
+#sustituir VOCALES
 for i in texto:
     if i == 'a' :
         texto=texto.replace('a','4')
@@ -86,4 +88,59 @@ for i in texto2:
         texto2=texto2.replace('o','')
     elif i=='u':
         texto2=texto2.replace('u','')
-print("sin vocales ",texto2)
+print("sin vocales ",texto2)'''
+
+#TODO
+'''
+3.-Realiza un juego que consiste en acertar un numero que el ordenador elige de forma
+aleatoria entre 1 y 50. Para ello se leen por teclado una serie de números, para los que
+se indica ”mayor”' o “menor”, según sea mayor o menor respecto al numero secreto. El
+proceso termina cuando se acierta o cuando se superan el número máximo de intentos
+establecidos en 3. Si lo prefieres, puedes parametrizar la dificultad del juego
+estableciendo dos variables para el número máximo (50) o el número de intentos (3)
+'''
+
+'''numAzar=random.randint(1,50)
+print(numAzar)
+adivina=int(input("ADIVINA EL NUMERO --> "))
+intentos=0
+bandera=False
+while not bandera:
+
+    if adivina==numAzar:
+        print("ACERTASTE!")
+        intentos=intentos+4
+    elif adivina<numAzar:
+        intentos=intentos+ 1
+        print("es mas grande")
+        adivina = int(input("VUELVE A INTENTARLO --> "))
+
+    elif adivina>numAzar:
+        intentos=intentos+1
+        print("es mas pequeño")
+        adivina = int(input("VUELVE A INTENTARLO --> "))
+    if intentos >= 2:
+        bandera = True
+        print("INTENTOS TERMINADOS")'''
+
+'''4.-Modifica el programa anterior para que el programa te de todos los intentos que
+necesites pero que cuando aciertes te informe de cuantas veces has fallado antes de
+lograrlo'''
+numAzar=random.randint(1,50)
+print(numAzar)
+adivina=int(input("ADIVINA EL NUMERO --> "))
+intentos=0
+bandera=False
+while not bandera:
+    if adivina==numAzar:
+        print("ACERTASTE!")
+        bandera=True
+    elif adivina<numAzar:
+        intentos=intentos+ 1
+        print("es mas grande")
+        adivina = int(input("VUELVE A INTENTARLO --> "))
+    elif adivina>numAzar:
+        intentos=intentos+1
+        print("es mas pequeño")
+        adivina = int(input("VUELVE A INTENTARLO --> "))
+print("Haz necesitado ",intentos," intentos")

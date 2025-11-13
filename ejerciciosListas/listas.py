@@ -33,11 +33,13 @@ print("INVERTIDA",listaNumeros)
 '''
 
 #SACAR NUMERO PRIMO
+'''
 primo =False
+num=0
 while not primo:
     num=random.randint(1,10)
     primo=True
     for i in range(2,num):
         if num%i==0:
             primo=False
-print(num)
+print(num)'''
