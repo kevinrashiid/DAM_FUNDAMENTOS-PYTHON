@@ -45,3 +45,7 @@ print("prueba "+s)
 
 if fruta== "manzana":
     print("son iguales")
+
+frase="hola mundo"
+for i in range(frase):
+    print(i, end=" ")
