@@ -126,7 +126,7 @@ while not bandera:
 '''4.-Modifica el programa anterior para que el programa te de todos los intentos que
 necesites pero que cuando aciertes te informe de cuantas veces has fallado antes de
 lograrlo'''
-numAzar=random.randint(1,50)
+'''numAzar=random.randint(1,50)
 print(numAzar)
 adivina=int(input("ADIVINA EL NUMERO --> "))
 intentos=0
@@ -143,4 +143,4 @@ while not bandera:
         intentos=intentos+1
         print("es mas pequeño")
         adivina = int(input("VUELVE A INTENTARLO --> "))
-print("Haz necesitado ",intentos," intentos")
+print("Haz necesitado ",intentos," intentos")'''
