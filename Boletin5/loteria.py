@@ -1,0 +1,18 @@
+from random import random
+
+"""Una lotería primitiva, por si no lo sabes, está formada por seis números y otro adicional
+para el reintegro. Los seis primeros números están comprendidos entre el 1 y el 49
+(ambos inclusive) que no pueden estar repetidos. El reintegro es un número entre el 0 y
+el 9. Haced un programa en python que calcule una combinación de números de forma
+aleatoria para la primitiva cumpliendo las normas explicadas antes y que luego la
+muestre por pantalla ordenada de menor a mayor. Lógicamente, también debería de
+mostrar el complementario."""
+
+loteria=[]
+for i in range(6):
+     numero_nuevo=random.randint(1,49)
+     while loteria.count((numero_nuevo))!=0:
+         numero_nuevo=random.randint(1,49)
+     loteria.append(numero_nuevo)
+print("Primitiva: ",loteria)
+print("Complementario ",random.randint(1,49))
