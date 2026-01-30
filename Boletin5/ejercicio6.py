@@ -13,18 +13,15 @@ respectiva.
 NOTA: No es preciso que metas los 20 datos para probar que tu programa funciona.
 Seguramente te bastará con tres o cuatro..."""
 
-paises =[]
-poblaciones = []
-entrada=0
+paisesPoblacion={}
+pais=""
+poblacion=0
+pais=str(input("Introduce un pais: "))
+poblacion=int(input("Introduce un poblacion: "))
+while pais !="-1":
+    paisesPoblacion[pais]=poblacion
+    pais=str(input("Introduce un pais: "))
+    if pais!="-1":
+        poblacion=int(input("Introduce un poblacion: "))
+print(sorted(paisesPoblacion.items(),key=lambda items:items[1],reverse=True))
 
-while entrada != -1:
-    entrada=input(str("Introduce la poblacion o pais"))
-    if entrada == -1:
-        entrada=entrada-1
-    elif isinstance(entrada,str):
-        paises.append(str(entrada))
-    elif isinstance(entrada,int):
-        poblaciones.append(int(entrada))
-
-print(paises)
-print(poblaciones)
