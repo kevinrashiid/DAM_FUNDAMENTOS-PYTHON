@@ -15,4 +15,3 @@ print(fraccion("10//a"))
 print(fraccion("//10"))
 print(fraccion("10"))
 
-
