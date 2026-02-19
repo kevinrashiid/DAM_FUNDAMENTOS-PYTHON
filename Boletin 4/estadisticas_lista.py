@@ -2,8 +2,6 @@ from ipaddress import summarize_address_range
 from statistics import median
 
 from unicodedata import numeric
-
-
 '''
 5.-Escribir un programa que pida números enteros por teclado. La ejecución terminará
 cuando el usuario introduzca la palabra EXIT. En ese momento debería de mostrar un

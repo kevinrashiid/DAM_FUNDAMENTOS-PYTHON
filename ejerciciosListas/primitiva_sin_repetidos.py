@@ -13,7 +13,6 @@ Al final, mostrar los 6 números ordenados de menor a mayor
 Ejemplo de salida:'''
 
 # EJERCICIO 1 LOTERÍA PRIMITIVA
-'''
 import random
 listaNumeros=[]
 while len(listaNumeros)<6:
@@ -31,9 +30,7 @@ print("ORDENADA",listaNumeros)
 listaNumeros.reverse() #la invierte
 print("INVERTIDA",listaNumeros)
 '''
-
 #SACAR NUMERO PRIMO
-'''
 primo =False
 num=0
 while not primo:

@@ -1,4 +1,4 @@
-'''1. Escribe un programa que dadas dos tuplas diferentes nos cree otra con los elementos comunes a
+'''1. Escribe un programa que dado dos tuplas diferentes nos cree otra con los elementos comunes a
 ambas ordenada de forma ascendente y sin repeticiones. Ejemplo:
 tupla1 = (1,4,2,5,49,3,75,3)
 tupla2 = (3,3,75, 75, 180, 9, 5)

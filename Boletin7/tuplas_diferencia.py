@@ -3,7 +3,7 @@
 '''2. Modifica ahora el programa anterior para que cree una tupla con los elementos que están en una u
 otra pero no en las dos. Muéstrala ahora ordenados descendentemente. Con el mismo ejemplo del
 caso anterior la salida sería esta:
-Los elementos que sólo aparecen en una son: (180,49,9,4,2,1'''
+Los elementos que solo aparecen en una son: (180,49,9,4,2,1'''
 tupla1 = (1,4,2,5,49,3,75,3)
 tupla2 = (3,3,75, 75, 180, 9, 5)
 

@@ -16,7 +16,7 @@ algo que no sea un número. Tenlo en cuenta en tu código para que este no se ro
 Ejemplo de ejecución:
 Lista: [42, 74, 34, 42, 51]
 Introduce el número que quieres borrar de la lista aa
-Sólo trabajo con números enteros
+Solo trabajo con números enteros
 Lista: [42, 74, 34, 42, 51]
 Introduce el número que quieres borrar de la lista 42
 Lista: [74, 34, 51]'''
