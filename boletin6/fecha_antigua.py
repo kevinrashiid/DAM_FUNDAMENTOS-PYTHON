@@ -3,7 +3,7 @@ import datetime
 def fecha_mas_antigua(fecha1, fecha2):
     for fecha in (fecha1, fecha2): #recoremos las dos fechas
         partes = fecha.split("/") #partimos cada fecha en 3 partes
-        if len(partes) != 3: #si es diferente a 3 partes ERROR
+        if len(partes) != 3: #sí es diferente a 3 partes ERROR
             return "Alguna de las fechas no es válida"
         d, m, a = map(int, partes) #mete cada parte en una variable
         if m < 1 or m > 12: #si mes es menor que 1 ERROR O es mayor a 12 ERROR

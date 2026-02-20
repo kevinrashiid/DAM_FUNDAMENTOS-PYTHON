@@ -24,15 +24,14 @@ def codigoEncriptacion():
         numero =random.randint(1,99)
         while numero in codigo.values():
             numero = random.randint(1, 99)
-            codigo.update({letra:numero})##añade el numero en su clave que le toca
-                ##codigo[letra]=numero
-            numero=random.randint(10,99)
+            #codigo.update({letra:numero})##añade el numero en su clave que le toca
+        codigo[letra]=numero
     return codigo
 
 def cifrar(mensaje,codigo_cifrado):
     #..aqui ciframos
     resultado=""
-    mensaje.replace(" ","").upper()
+    mensaje=mensaje.replace(" ","").upper()
     for letra in mensaje:
         resultado=resultado+str(codigo_cifrado[letra])
     if len(resultado)%3!=0:

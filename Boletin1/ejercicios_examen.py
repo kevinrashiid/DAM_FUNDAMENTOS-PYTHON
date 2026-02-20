@@ -122,7 +122,7 @@ bandera=True
 while bandera:
     azar = random.randint(int(1e7), int(5e7))  ##numero aletorio con notacion cientifica
     for i in range(2,int(azar/2)):
-        if azar%i!=0:
+        if azar%i==0:
             bandera=False
 print(azar)'''
 

@@ -16,5 +16,4 @@ def tiradadosmultiple(numero_dados):  # Función que recibe cuántos dados quere
             break  # Si todos son iguales, salimos del bucle
     # Mostramos cuántas tiradas fueron necesarias
     print("He tenido que lanzar los dados", contador, "veces para que todos sean iguales")
-
 tiradadosmultiple(3)

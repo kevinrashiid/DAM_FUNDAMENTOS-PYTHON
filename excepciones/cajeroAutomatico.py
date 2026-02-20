@@ -2,7 +2,7 @@
 def validar_retirada(retirada,saldoActual):
     retirada=int(retirada)
     if retirada <0:
-        raise ValueError("No se puede retirar cantidades negativas")
+        raise ValueError("No se puede retirar cantidades negativas") # raise lanza el error
     if retirada%20!=0 and retirada%50!=0:
         raise ValueError("Solo multiplos de 20 o 50")
     if retirada >saldoActual:

@@ -9,6 +9,7 @@ def fraccion(fraccion):
             return 0.0
         return int(numerador)/int(denominador) #DEVUELVE EL RESULTADO DE LA OPERACION
     """UTILIZANDO LA FUNCION"""
+
 print(fraccion("25/10"))
 print(fraccion("a/10"))
 print(fraccion("10//a"))
