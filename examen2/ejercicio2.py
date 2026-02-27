@@ -13,7 +13,7 @@ def analizar_lecturas(*numeros):
                 diccionario1.update({"minimo":listaNumero[0]})
                 #diccionario1.update({"promedio":numero/listaNumero.count()})
             if numero>100:
-                contador=contador+1
+                contador+=1
                 if contador>2:
                     raise ValueError("MAl FUNCIONAMIENTO DEL SENSOR")
         except ValueError:
@@ -21,6 +21,6 @@ def analizar_lecturas(*numeros):
 
     return diccionario1
 
-print(analizar_lecturas(19,"error",2,4,1,))
+print(analizar_lecturas(200,"error",300,400,1,))
 
 # ==================== TODO FUNCIONA SOLO ME FALTA EL PROMEDIO ====================

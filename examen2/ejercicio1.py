@@ -14,7 +14,7 @@ def limpiarInvetario(inventario):
     diccionarioComprimido={}
     for item in inventario:
         diccionarioComprimido[item["nombre"]]=item["precio"]
-        return diccionarioComprimido
+    return diccionarioComprimido
 print(limpiarInvetario(inventario))
 
 #def filtrarPrecioEntre(limpiarInvetario)
